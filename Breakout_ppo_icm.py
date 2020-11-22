@@ -205,7 +205,7 @@ def main():
         total_reward = np.stack(total_reward).transpose()
         total_done = np.stack(total_done).transpose()
         total_values = np.stack(total_values).transpose()
-        total_logging_policy = np.vstack(total_policy.cpu())
+        total_logging_policy = np.vstack(total_policy)
 
         # Step 2. calculate intrinsic reward
         # running mean intrinsic reward
